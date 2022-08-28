@@ -1,0 +1,71 @@
+Script started on 2022-08-26 01:55:18+00:00
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# ls
+[0m[38;5;9mhttpd-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-debugsource-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-devel-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-devel-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-manual-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-tools-2.4.54-1.x86_64.rpm[0m
+[38;5;9mhttpd-tools-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_authnz_ldap-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_authnz_ldap-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_lua-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_lua-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_proxy_html-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_proxy_html-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_ssl-2.4.54-1.x86_64.rpm[0m
+[38;5;9mmod_ssl-debuginfo-2.4.54-1.x86_64.rpm[0m
+[38;5;33mrepodata[0m
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# ls repodata/
+[0m[38;5;9m0ecfe3fcfad6cc768b271913a57b86b8dcefe2fe8ddd95da97d2c73a30d78746-primary.xml.gz[0m[K
+[38;5;9m1120c6ed3ae7082333e50fb397ade68fc96373d291137b73efb811a940c6bd2e-filelists.xml.gz[0m[K
+[38;5;9m7b25646f478d2fafa63f57fe5f70cdace1f2696ae90b15f6bffa2b49fa189b5f-filelists.sqlite.bz2[0m[K
+[38;5;9m7cedf853f2489b95a7193919bc6fd3d90c39dfdbee54833198f1ff5ce072ae57-other.sqlite.bz2[0m[K
+[38;5;9mc83dc6f61eb45664b5b8b796ef3b1eadea3ee3ab1d36acf15c636df0ecedbb58-primary.sqlite.bz2[0m[K
+[38;5;9mf0ea28d0b7139c8eba1a24af37b24cfc2ba3dc30e19c2e5983c932afb82d1cb7-other.xml.gz[0m[K
+repomd.xml
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# ls [K[K[Ksudo ls /repos/CentOS/8/
+httpd-2.4.54-1.x86_64.rpm
+httpd-debuginfo-2.4.54-1.x86_64.rpm
+httpd-debugsource-2.4.54-1.x86_64.rpm
+httpd-devel-2.4.54-1.x86_64.rpm
+httpd-devel-debuginfo-2.4.54-1.x86_64.rpm
+httpd-manual-2.4.54-1.x86_64.rpm
+httpd-tools-2.4.54-1.x86_64.rpm
+httpd-tools-debuginfo-2.4.54-1.x86_64.rpm
+mod_authnz_ldap-2.4.54-1.x86_64.rpm
+mod_authnz_ldap-debuginfo-2.4.54-1.x86_64.rpm
+mod_lua-2.4.54-1.x86_64.rpm
+mod_lua-debuginfo-2.4.54-1.x86_64.rpm
+mod_proxy_html-2.4.54-1.x86_64.rpm
+mod_proxy_html-debuginfo-2.4.54-1.x86_64.rpm
+mod_ssl-2.4.54-1.x86_64.rpm
+mod_ssl-debuginfo-2.4.54-1.x86_64.rpm
+repodata
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# sudo ls /repos/CentOS/8/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo ls [K [K[K[K[K[K[K[K[Kls /home/vagrant/rpmbuild/
+BUILD/     BUILDROOT/ RPMS/      SOURCES/   SPECS/     SRPMS/
+[root@localhost 8]# ls /home/vagrant/rpmbuild/
+[0m[38;5;33mBUILD[0m  [38;5;33mBUILDROOT[0m  [38;5;33mRPMS[0m  [38;5;33mSOURCES[0m  [38;5;33mSPECS[0m  [38;5;33mSRPMS[0m
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# ls /home/vagrant/rpmbuild/SO[K[K[K[K[K[K[K[K[K[K[K[K/
+[0m[38;5;9mapch.tar.bz2[0m            [38;5;9mapr.tar.bz2[0m   [38;5;9mhttpd-2.4.54.tar.bz2[0m
+[38;5;9mapr-1.7.0.tar.bz2[0m       [38;5;9maprr.tar.bz2[0m  [38;5;33mrpmbuild[0m
+[38;5;9mapr-util-1.6.1.tar.bz2[0m  [38;5;33mhttpd-2.4.54[0m
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# yum repol[K[K[K[K[K[K[K[K[Ksudo yum repolist
+Failed to set locale, defaulting to C.UTF-8
+repo id                    repo name
+appstream                  CentOS Linux 8 - AppStream
+baseos                     CentOS Linux 8 - BaseOS
+extras                     CentOS Linux 8 - Extras
+local                      Local
+powertools                 CentOS Linux 8 - PowerTools
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# sudo yum repolist[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat /etc/yum.repos.d/local.repo 
+[local]
+name=Local
+baseurl=file:///repos/CentOS/8/
+enabled=1
+gpgcheck=0
+]0;root@localhost:/repos/CentOS/8[root@localhost 8]# exx[Kit
+exit
+
+Script done on 2022-08-26 01:59:06+00:00
