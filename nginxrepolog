@@ -1,0 +1,161 @@
+Script started on 2022-09-01 00:12:32+00:00
+[root@localhost vagrant]# mkdir /usr/share/nginx/html/repo
+[root@localhost vagrant]# cp ~/rpmbuild/RPMS/x86_64/* /usr/share/nginx/html/repo
+[root@localhost vagrant]# createrepo /usr/share/nginx/html/repo
+Directory walk started
+Directory walk done - 16 packages
+Temporary output repo path: /usr/share/nginx/html/repo/.repodata/
+Preparing sqlite DBs
+Pool started (with 5 workers)
+Pool finished
+[root@localhost vagrant]# vi /etc/nginx/conf.d/defa[K[K[Kefaul[K[K[K[K[K[K[C[1P /etc/nginx/conf.d/[1P /etc/nginx/conf.d/l /etc/nginx/conf.d/s /etc/nginx/conf.d/
+[root@localhost vagrant]# ls /etc/nginx/conf.d/[C[C[1P /etc/nginx/conf.d/[1P /etc/nginx/conf.d/l /etc/nginx/conf.d/s /etc/nginx/conf.d/[C /etc/nginx/conf.d/- /etc/nginx/conf.d/l /etc/nginx/conf.d/a /etc/nginx/conf.d/
+total 4
+drwxr-xr-x 2 root root    6 Oct  7  2019 [0m[01;34m.[0m
+drwxr-xr-x 4 root root 4096 Sep  1 00:11 [01;34m..[0m
+[root@localhost vagrant]# vi /etc/nginx/conf.d/default.conf
+[1;37r[27m[24m[m[H[J[?25l[?1c[37;1H"/etc/nginx/conf.d/default.conf" [New File][2;1H[1m[34m~                                                                                                   [3;1H~                                                                                                   [4;1H~                                                                                                   [5;1H~                                                                                                   [6;1H~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[m[37;1H[1m-- INSERT --[m[37;13H[K[1;1H[?25h[?0c[?25l[?1cv[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1cv[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1c[1;6H[K[1;6H[?25h[?0c[?25l[?1c[1;5H[K[1;5H[?25h[?0c[?25l[?1c[1;4H[K[1;4H[?25h[?0c[?25l[?1c[1;3H[K[1;3H[?25h[?0c[?25l[?1c[1;2H[K[1;2H[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c{[?25h[?0c[?25l[?1c[2;1H[K[2;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1cv[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c{[?25h[?0c[?25l[?1c[3;1H[K[3;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c}[?25h[?0c[?25l[?1c[4;1H[K[4;1H[?25h[?0c[?25l[?1c}[?25h[?0c[3;1H[2;1H[8Cserver {[?25l[?1c[3;36r[3;1H[L[1;37r[3;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c[[?25h[?0c[?25l[?1c[4;36r[4;1H[L[1;37r[4;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1cu[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cg[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cx[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c;[?25h[?0c[?25l[?1c[5;36r[5;1H[L[1;37r[5;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cx[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1c[5;30H[K[5;30H[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cx[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cx[?25h[?0c[?25l[?1c.[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cm[?25h[?0c[?25l[?1c;[?25h[?0c[?25l[?1c[6;36r[6;1H[L[1;37r[6;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cu[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1ci[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1cd[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cx[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cn[?25h[?0c[?25l[?1c[7;36r[7;1H[L[1;37r[7;1H[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c[8C[?25h[?0c[?25l[?1c}[?25h[?0c[6;17H[8C[5;25H[4;25H[3;25H / [?25l[?1c[[3;28H[K[3;27H[?25h[?0c[?25l[?1c[3;27H[K[3;27H[?25h[?0c[?25l[?1c [?25h[?0c[?25l[?1c{[?25h[?0c[37;1H[K[3;28H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/etc/nginx/conf.d/default.conf" [New] 9L, 119C written[?25h[?0c
+[root@localhost vagrant]# nginx -t
+nginx: [emerg] "http" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+nginx: configuration file /etc/nginx/nginx.conf test failed
+[root@localhost vagrant]# vi /etc/nginx/nginx.conf
+[1;37r[27m[24m[m[H[J[?25l[?1c[37;1H"/etc/nginx/nginx.conf" 90L, 2469C[1;1H# For more information on configuration, see:
+#   * Official English Documentation: http://nginx.org/en/docs/
+#   * Official Russian Documentation: http://nginx.org/ru/docs/
+
+user nginx;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+# Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.
+include /usr/share/nginx/modules/*.conf;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '[19;23H'$status $body_bytes_sent "$http_referer" '[20;23H'"$http_user_agent" "$http_x_forwarded_for"';[22;5Haccess_log  /var/log/nginx/access.log  main;[24;5Hsendfile[12Con;
+    tcp_nopush[10Con;
+    tcp_nodelay[9Con;
+    keepalive_timeout   65;
+    types_hash_max_size 2048;[30;5Hinclude[13C/etc/nginx/mime.types;
+    default_type[8Capplication/octet-stream;[33;5H# Load modular configuration files from the /etc/nginx/conf.d directory.
+    # See http://nginx.org/en/docs/ngx_core_module.html#include
+    # for more information.
+    include /etc/nginx/conf.d/*.conf;[1;1H[?25h[?0c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H
+
+
+
+
+
+
+[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[?1c[37;1H[K[37;1H:[?25h[?0cq[?25l[?1c[?25h[?0c[37;1H[K[37;1H[root@localhost vagrant]# vi /etc/nginx/nginx.conf[16Pnginx -tvi /etc/nginx/conf.d/default.conf
+[1;37r[27m[24m[m[H[J[?25l[?1c[37;1H"/etc/nginx/conf.d/default.conf" 9L, 119C[1;1Hhttp {[2;9Hserver {[3;17Hlocation / {[4;25Hroot /usr/share/nginx/html;[5;25Hindex index.html index.htm;[6;25Hautoindex on[7;17H}[8;9H}
+}
+[1m[34m~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[?25l[?1c[mttp {[1;6H[K[1;1H[?25h[?0c[?25l[?1ctp {[1;5H[K[1;1H[?25h[?0c[?25l[?1cp {[1;4H[K[1;1H[?25h[?0c[?25l[?1c {[1;3H[K[1;1H[?25h[?0c[?25l[?1c{[1;2H[K[1;1H[?25h[?0c[?25l[?1c[1;1H[K[1;1H[?25h[?0c[2;8H[1;1H[2;8H[1;1H[2;8H[1;1H[2;8H[1;1H[2;8H[3;8H[2;16H [1;1H[2;8H [?25l[?1cerver {[2;16H[K[2;9H[?25h[?0c[?25l[?1c[37;1H[1m-- INSERT --[m[37;13H[K[2;1Herver {[2;9H[K[2;1H[?25h[?0c[?25l[?1cserver {s[?25h[?0c[?25l[?1c[1;36r[36;1H
+[1;37r[36;1H[1m[34m~                                                                                                   [1;1H[?25h[?0c
+[8C[8C[mlocat[?25l[?1cocation / {[2;28H[K[2;17H[?25h[?0c[?25l[?1c[2;9Hocation / {[2;20H[K[2;9H[?25h[?0c[?25l[?1cocation / {[2;12H[K[2;1H[?25h[?0c[?25l[?1c        ocation / {[2;9H[?25h[?0c[?25l[?1clocation / {[2;10H[?25h[?0c[3;9H[8C[8Cr[?25l[?1c[3;17Hroot /usr/share/nginx/html;[3;44H[K[3;17H[?25h[?0c[4;17H[8C[?25l[?1c[4;17Hindex index.html index.htm;[4;44H[K[4;17H[?25h[?0c[5;17H[8C[?25l[?1c[5;17Hautoindex on[5;29H[K[5;17H[?25h[?0c[6;17H[6;9H[8C[?25l[?1c[6;9H}[6;17H[K[6;9H[?25h[?0c[7;9H[?25l[?1c}[7;9H[K[7;1H[?25h[?0c
+[?25l[?1c[7;2H}
+[1m[34m~                                                                                                   [7;2H[?25h[?0c[?25l[?1c[m[7;2H[K[7;2H[?25h[?0c[37;1H[K[7;1H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/etc/nginx/conf.d/default.conf" 7L, 103C written[?25h[?0c
+[root@localhost vagrant]# vi /etc/nginx/conf.d/default.conf[9Pnginx.conf[16Pnginx -t
+nginx: [emerg] unexpected "}" in /etc/nginx/conf.d/default.conf:6
+nginx: configuration file /etc/nginx/nginx.conf test failed
+[root@localhost vagrant]# nginx -t[Knginx -tvi /etc/nginx/conf.d/default.conf
+[1;37r[27m[24m[m[H[J[?25l[?1c[37;1H"/etc/nginx/conf.d/default.conf" 7L, 103C[1;1Hserver {[2;9Hlocation / {[3;17Hroot /usr/share/nginx/html;[4;17Hindex index.html index.htm;[5;17Hautoindex on[6;9H}
+}
+[1m[34m~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c[2;8H[3;8H[4;8H[5;8H[8C[m autoindex o[?25l[?1c[37;1H[1m-- INSERT --[m[37;13H[K[5;28H[?25h[?0cn[?25l[?1c;[?25h[?0c[37;1H[K[5;29H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/etc/nginx/conf.d/default.conf" 7L, 104C written[?25h[?0c
+[root@localhost vagrant]# vi /etc/nginx/conf.d/default.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnginx -t[K
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+[root@localhost vagrant]# nginx -t[Ksystemctl reload nginx
+nginx.service is not active, cannot reload.
+[root@localhost vagrant]# systemctl reload nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginxs nginxt nginxa nginxr nginxt nginx
+[root@localhost vagrant]# systemctl start nginx[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcurl http://localhost/repo/
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.14.1</center>
+</body>
+</html>
+[root@localhost vagrant]# vi /etc/t[Kyum.repos.d/local.repo 
+[1;37r[27m[24m[m[H[J[?25l[?1c[37;1H"/etc/yum.repos.d/local.repo" 5L, 72C[1;1H[local]
+name=Local
+baseurl=file:///repos/CentOS/8/
+enabled=1
+gpgcheck=0
+[1m[34m~                                                                                                   [7;1H~                                                                                                   [8;1H~                                                                                                   [9;1H~                                                                                                   [10;1H~                                                                                                   [11;1H~                                                                                                   [12;1H~                                                                                                   [13;1H~                                                                                                   [14;1H~                                                                                                   [15;1H~                                                                                                   [16;1H~                                                                                                   [17;1H~                                                                                                   [18;1H~                                                                                                   [19;1H~                                                                                                   [20;1H~                                                                                                   [21;1H~                                                                                                   [22;1H~                                                                                                   [23;1H~                                                                                                   [24;1H~                                                                                                   [25;1H~                                                                                                   [26;1H~                                                                                                   [27;1H~                                                                                                   [28;1H~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [35;1H~                                                                                                   [36;1H~                                                                                                   [1;1H[?25h[?0c
+[?25l[?1c[m[37;1H[1m-- INSERT --[m[37;13H[K[2;1H[?25h[?0c
+baseurl=file:///repos/CentOS/8[?25l[?1c/[3;31H[K[3;30H[?25h[?0c[?25l[?1c[3;30H[K[3;29H[?25h[?0c[?25l[?1c[3;29H[K[3;29H[?25h[?0c[?25l[?1c[3;28H[K[3;28H[?25h[?0c[?25l[?1c[3;27H[K[3;27H[?25h[?0c[?25l[?1c[3;26H[K[3;26H[?25h[?0c[?25l[?1c[3;25H[K[3;25H[?25h[?0c[?25l[?1c[3;24H[K[3;24H[?25h[?0c[?25l[?1c[3;23H[K[3;23H[?25h[?0c[?25l[?1c[3;22H[K[3;22H[?25h[?0c[?25l[?1c[3;21H[K[3;21H[?25h[?0c[?25l[?1c[3;20H[K[3;20H[?25h[?0c[?25l[?1c[3;19H[K[3;19H[?25h[?0c[?25l[?1c[3;18H[K[3;18H[?25h[?0c[?25l[?1c[3;17H[K[3;17H[?25h[?0c[?25l[?1c[3;16H[K[3;16H[?25h[?0c[?25l[?1c[3;15H[K[3;15H[?25h[?0c[?25l[?1c[3;14H[K[3;14H[?25h[?0c[?25l[?1c[3;13H[K[3;13H[?25h[?0c[?25l[?1c[3;12H[K[3;12H[?25h[?0c[?25l[?1c[3;11H[K[3;11H[?25h[?0c[?25l[?1c[3;10H[K[3;10H[?25h[?0c[?25l[?1c[3;9H[K[3;9H[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1c:[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cc[?25h[?0c[?25l[?1ca[?25h[?0c[?25l[?1cl[?25h[?0c[?25l[?1ch[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1cs[?25h[?0c[?25l[?1ct[?25h[?0c[?25l[?1c/[?25h[?0c[?25l[?1cr[?25h[?0c[?25l[?1ce[?25h[?0c[?25l[?1cp[?25h[?0c[?25l[?1co[?25h[?0c[?25l[?1c/[?25h[?0c[37;1H[K[3;30H[?25l[?1c[?25h[?0c[?25l[?1c[37;1H:[?25h[?0cwq[?25l[?1c"/etc/yum.repos.d/local.repo" 5L, 71C written[?25h[?0c
+[root@localhost vagrant]# vi /etc/yum.repos.d/local.repo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcurl http://localhost/repo/
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.14.1</center>
+</body>
+</html>
+[root@localhost vagrant]# curl http://localhost/repo/vi /etc/yum.repos.d/local.repo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcurl http://localhost/repo/[6Psystemctl start nginx[1@reload[C[C[C[C[C[C[1Pstart[C[C[C[C[C[C[1@reload[C[C[C[C[C[C
+[root@localhost vagrant]# systemctl reload nginxcurl http://localhost/repo/
+<html>
+<head><title>403 Forbidden</title></head>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.14.1</center>
+</body>
+</html>
+[root@localhost vagrant]# curl http://localhost/repo/[5Psystemctl reload nginxcurl http://localhost/repo/vi /etc/yum.repos.d/local.repo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcurl http://localhost/repo/[5Psystemctl reload nginxcurl http://localhost/repo/[Kexit
+exit
+
+Script done on 2022-09-01 00:26:02+00:00
+Script started on 2022-09-01 00:31:20+00:00
+[root@localhost vagrant]# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+[root@localhost vagrant]# nginx -t[4Pexitcurl http://localhost/repo/
+<html>
+<head><title>Index of /repo/</title></head>
+<body bgcolor="white">
+<h1>Index of /repo/</h1><hr><pre><a href="../">../</a>
+<a href="repodata/">repodata/</a>                                          01-Sep-2022 00:13                   -
+<a href="httpd-2.4.54-1.x86_64.rpm">httpd-2.4.54-1.x86_64.rpm</a>                          01-Sep-2022 00:13             1488572
+<a href="httpd-debuginfo-2.4.54-1.x86_64.rpm">httpd-debuginfo-2.4.54-1.x86_64.rpm</a>                01-Sep-2022 00:13             2414136
+<a href="httpd-debugsource-2.4.54-1.x86_64.rpm">httpd-debugsource-2.4.54-1.x86_64.rpm</a>              01-Sep-2022 00:13             1522744
+<a href="httpd-devel-2.4.54-1.x86_64.rpm">httpd-devel-2.4.54-1.x86_64.rpm</a>                    01-Sep-2022 00:13              215472
+<a href="httpd-devel-debuginfo-2.4.54-1.x86_64.rpm">httpd-devel-debuginfo-2.4.54-1.x86_64.rpm</a>          01-Sep-2022 00:13               12368
+<a href="httpd-manual-2.4.54-1.x86_64.rpm">httpd-manual-2.4.54-1.x86_64.rpm</a>                   01-Sep-2022 00:13             4400392
+<a href="httpd-tools-2.4.54-1.x86_64.rpm">httpd-tools-2.4.54-1.x86_64.rpm</a>                    01-Sep-2022 00:13               87704
+<a href="httpd-tools-debuginfo-2.4.54-1.x86_64.rpm">httpd-tools-debuginfo-2.4.54-1.x86_64.rpm</a>          01-Sep-2022 00:13               96712
+<a href="mod_authnz_ldap-2.4.54-1.x86_64.rpm">mod_authnz_ldap-2.4.54-1.x86_64.rpm</a>                01-Sep-2022 00:13               55096
+<a href="mod_authnz_ldap-debuginfo-2.4.54-1.x86_64.rpm">mod_authnz_ldap-debuginfo-2.4.54-1.x86_64.rpm</a>      01-Sep-2022 00:13               94432
+<a href="mod_lua-2.4.54-1.x86_64.rpm">mod_lua-2.4.54-1.x86_64.rpm</a>                        01-Sep-2022 00:13               53892
+<a href="mod_lua-debuginfo-2.4.54-1.x86_64.rpm">mod_lua-debuginfo-2.4.54-1.x86_64.rpm</a>              01-Sep-2022 00:13              116628
+<a href="mod_proxy_html-2.4.54-1.x86_64.rpm">mod_proxy_html-2.4.54-1.x86_64.rpm</a>                 01-Sep-2022 00:13               30632
+<a href="mod_proxy_html-debuginfo-2.4.54-1.x86_64.rpm">mod_proxy_html-debuginfo-2.4.54-1.x86_64.rpm</a>       01-Sep-2022 00:13               62624
+<a href="mod_ssl-2.4.54-1.x86_64.rpm">mod_ssl-2.4.54-1.x86_64.rpm</a>                        01-Sep-2022 00:13              108348
+<a href="mod_ssl-debuginfo-2.4.54-1.x86_64.rpm">mod_ssl-debuginfo-2.4.54-1.x86_64.rpm</a>              01-Sep-2022 00:13              211344
+</pre><hr></body>
+</html>
+[root@localhost vagrant]# exit
+exit
+
+Script done on 2022-09-01 00:31:42+00:00
